@@ -63,18 +63,21 @@ Gender
 Age
 Notes
 MR No
+
 2. Doctor
 Names
 Gender
 Age
 Employee
 Specialist
+
 3. Registration
 MR No
 Date
 Poly
 Assurance
 Age
+
 4. Medical Record
 Diagnos
 Drugs
@@ -82,10 +85,12 @@ Reference
 ICD
 MR No
 Date
+
 5. Administration
 Letter No
 Input
 Endorsem
+
 6. Health Office
 Reception
 ```
@@ -164,10 +169,10 @@ Total for Administration
 Partial for Health Office
 ```
 ## Extension (Prerequisite / Billing):
-How Billing Can Be Modeled in the Diagram
-1. Billing via the Administration Entity
-The Administration entity, which contains attributes like:
 
+How Billing Can Be Modeled in the Diagram
+1.Billing via the Administration Entity
+The Administration entity, which contains attributes like:
 Letter No
 Input
 Endorsem
@@ -180,18 +185,18 @@ Payment Date
 Invoice Number
 Mode of Payment
 
-2. Billing Relationship with Medical Record
+2.Billing Relationship with Medical Record
 The Medical Record contains crucial treatment-related data:
+Diagnosis, Drugs, Reference, ICD.
 
-Diagnosis, Drugs, Reference, ICD
 This data directly influences billing calculations:
 Drugs prescribed, procedures performed, and diagnoses can be priced and billed.
+
 A Billing entity can be created and connected to the Medical Record with a relationship like:
 "Generate Bill" or "Billed For"
 
-3. Assurance (Insurance) Attribute in Registration
+3.Assurance (Insurance) Attribute in Registration
 The Registration entity contains an Assurance attribute, which likely refers to insurance.
-
 Billing calculations can consider:
 Whether the patient is insured
 Which costs are covered or not covered
@@ -225,73 +230,62 @@ Administration entity (for managing billing, invoicing, and payments)
 ## Design Choices:
 
 Entities:
-1. Patient
+1.Patient
 Why chosen: Core participant in a hospital system. Holds key personal and medical identifiers.
-
 Assumption: Each patient has a unique MR No (Medical Record Number) which acts as a primary identifier.
 
-2. Doctor
+2.Doctor
 Why chosen: Main actor responsible for diagnosis and treatment.
-
 Assumption: Each doctor is uniquely identified by Employee ID and can specialize in certain fields.
 
-3. Registration
+3.Registration
 Why chosen: Represents the entry point into the hospital system.
-
 Assumption: Every visit or admission begins with a registration containing patient details, date, and insurance info.
 
-4. Medical Record
+4.Medical Record
 Why chosen: Contains crucial information about the patient’s medical history and diagnosis.
-
 Assumption: Created once a patient is examined and includes treatment data like drugs, ICD codes, and references.
 
-5. Administration
+5.Administration
 Why chosen: Captures backend tasks such as approvals, summaries, or possibly billing.
-
 Assumption: Used for documentation, official records, and possibly tracking billing or report generation.
 
-6. Health Office
+6.Health Office
 Why chosen: Represents the external or overseeing body that may require reporting.
-
 Assumption: Receives summaries or outcomes from hospital administration for governance or audits.
 
-Relationships
-1. Check (Patient–Doctor)
-Why chosen: Models interaction where doctors check or examine patients.
+Relationships:
 
+1.Check (Patient–Doctor)
+Why chosen: Models interaction where doctors check or examine patients.
 Assumption: A many-to-many relationship, as patients may see multiple doctors and vice versa.
 
-2. Registrate (Patient–Registration)
+2.Registrate (Patient–Registration)
 Why chosen: Represents the initial hospital process before any treatment or record-keeping.
-
 Assumption: A one-to-many relationship, as one patient may register multiple times for different visits.
 
-3. Set up (Registration–Medical Record)
+3.Set up (Registration–Medical Record)
 Why chosen: Represents that a medical record is created after registration.
-
 Assumption: Each registration leads to at least one medical record being created.
 
-4. Fill in (Doctor–Medical Record)
+4.Fill in (Doctor–Medical Record)
 Why chosen: Doctors are responsible for entering data in medical records.
-
 Assumption: Each record must be filled by a doctor, but one doctor can handle multiple records.
 
-5. Recap (Medical Record–Administration)
+5.Recap (Medical Record–Administration)
 Why chosen: Medical records are summarized or processed by the administration for official use.
-
 Assumption: Admin needs to maintain a summary or billing documentation.
 
-6. Report (Administration–Health Office)
+6.Report (Administration–Health Office)
 Why chosen: Reflects reporting structure to health authorities.
-
 Assumption: Admin must deliver routine reports to the health office, including patient statistics or financials.
 
-Assumptions
+Assumptions:
+
 Each MR No is unique per patient and reused in associated entities like Medical Record and Registration.
 Assurance (Insurance) details in Registration are used in financial or billing processes.
 Age is captured multiple times for both Patients and Registration, possibly to reflect age at each visit.
 Billing and payments are assumed to be part of the Administration entity (extendable).
-
 Doctors fill in the medical record — data entry isn’t modeled separately as a process but included logically.
 
 ## RESULT:
