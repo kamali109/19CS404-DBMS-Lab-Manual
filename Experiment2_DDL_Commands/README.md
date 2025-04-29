@@ -136,6 +136,7 @@ Stock INTEGER
 
 ![Screenshot 2025-04-29 204424](https://github.com/user-attachments/assets/e649ecb1-fdea-4809-bc76-bdc27c983a96)
 
+
 **Question 2**
 ```
 Write a SQL query to add a column named Date_of_birth as Date in the Student_details table.
@@ -162,6 +163,7 @@ ADD COLUMN Date_of_birth Date;
 
 ![Screenshot 2025-04-29 211225](https://github.com/user-attachments/assets/f8b02a41-4abc-483a-b2e7-23370fc3b54a)
 
+
 **Question 3**
 ```
 Insert a new product with ProductID 101, Name Laptop, Category Electronics, Price 1500, and Stock 50 into the Products table.
@@ -183,6 +185,7 @@ VALUES (101, 'Laptop', 'Electronics', 1500, 50);
 **Output:**
 
 ![Screenshot 2025-04-29 211332](https://github.com/user-attachments/assets/5de5077f-52d3-46d5-91cd-c8ad080abd8b)
+
 
 **Question 4**
 
@@ -221,6 +224,7 @@ ADD COLUMN Country TEXT;
 
 <img width="410" alt="image" src="https://github.com/user-attachments/assets/34266f21-79a0-4ae8-89d4-7002eb11de0f" />
 
+
 **Question 5**
 ```
 Create a new table named products with the following specifications:
@@ -256,6 +260,7 @@ CHECK(list_price >=0)
 
 <img width="403" alt="image" src="https://github.com/user-attachments/assets/3c09167c-3dde-4088-bbb0-9cac81cba308" />
 
+
 **Question 6**
 ```
 Insert all books from Out_of_print_books into Books
@@ -282,6 +287,7 @@ FROM Out_of_print_books;
 **Output:**
 
 <img width="403" alt="image" src="https://github.com/user-attachments/assets/4d4c773e-3d2f-4846-9e4f-d9265389cea7" />
+
 
 **Question 7**
 ```
@@ -313,6 +319,7 @@ FOREIGN KEY (ProjectID) REFERENCES Projects(ProjectID)
 
 <img width="405" alt="image" src="https://github.com/user-attachments/assets/3250fc2b-a6a8-4a26-bd6b-6ef6948d4e0e" />
 
+
 **Question 8**
 ```
 SQL code:
@@ -325,6 +332,7 @@ VALUES
 **Output:**
 
 <img width="401" alt="image" src="https://github.com/user-attachments/assets/dfc9a13c-c44c-4fb6-bc00-f1e0ea13b763" />
+
 
 **Question 9**
 ```
@@ -354,6 +362,7 @@ Stock INTEGER CHECK (Stock>=0)
 **Output:**
 
 <img width="404" alt="image" src="https://github.com/user-attachments/assets/cdadb856-f4fe-4801-9492-e1404be7ec5d" />
+
 
 **Question 10**
 ```
@@ -386,6 +395,7 @@ FOREIGN KEY(DepartmentID) REFERENCES Departments(DepartmentID)
 ```
 
 **Output:**
+
 <img width="418" alt="image" src="https://github.com/user-attachments/assets/c029fba9-0087-42d4-b6c8-db1d880d666f" />
 
 ## RESULT
