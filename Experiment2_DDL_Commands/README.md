@@ -181,9 +181,11 @@ INSERT INTO Products (ProductID, Name, Category, Price, Stock)
 VALUES (101, 'Laptop', 'Electronics', 1500, 50);
 ```
 **Output:**
+
 ![Screenshot 2025-04-29 211332](https://github.com/user-attachments/assets/5de5077f-52d3-46d5-91cd-c8ad080abd8b)
 
 **Question 4**
+
 ```
 Write a SQL query to Add a new column Country as text in the Student_details table.
 
@@ -214,7 +216,9 @@ SQL code
 ALTER TABLE Student_details
 ADD COLUMN Country TEXT;
 ```
+
 **Output:**
+
 <img width="410" alt="image" src="https://github.com/user-attachments/assets/34266f21-79a0-4ae8-89d4-7002eb11de0f" />
 
 **Question 5**
@@ -234,6 +238,7 @@ Test	Result
 INSERT INTO products (product_id, product_name, list_price) VALUES (2, 'Product B', 50.00);
 SELECT * FROM products;
 ```
+
  SQL code:
 ```
 CREATE TABLE products(
@@ -246,6 +251,7 @@ CHECK (discount >= 0),
 CHECK(list_price >=0)
 );
 ```
+
 **Output:**
 
 <img width="403" alt="image" src="https://github.com/user-attachments/assets/3c09167c-3dde-4088-bbb0-9cac81cba308" />
@@ -272,6 +278,7 @@ INSERT INTO Books( ISBN, Title, Author, Publisher, YearPublished)
 SELECT ISBN, Title, Author, Publisher, YearPublished
 FROM Out_of_print_books; 
 ```
+
 **Output:**
 
 <img width="403" alt="image" src="https://github.com/user-attachments/assets/4d4c773e-3d2f-4846-9e4f-d9265389cea7" />
@@ -301,6 +308,7 @@ FOREIGN KEY (ProjectID) REFERENCES Projects(ProjectID)
 
 );
 ```
+
 **Output:**
 
 <img width="405" alt="image" src="https://github.com/user-attachments/assets/3250fc2b-a6a8-4a26-bd6b-6ef6948d4e0e" />
@@ -313,6 +321,7 @@ VALUES
 (2, 'John Smith', 'Developer', 'IT', 75000),
 (3, 'Anna Bell', 'Designer', 'Marketing', 68000);
 ```
+
 **Output:**
 
 <img width="401" alt="image" src="https://github.com/user-attachments/assets/dfc9a13c-c44c-4fb6-bc00-f1e0ea13b763" />
@@ -341,6 +350,7 @@ Price REAL CHECK (Price>0),
 Stock INTEGER CHECK (Stock>=0)
 );
 ```
+
 **Output:**
 
 <img width="404" alt="image" src="https://github.com/user-attachments/assets/cdadb856-f4fe-4801-9492-e1404be7ec5d" />
@@ -374,6 +384,7 @@ DepartmentID INTEGER,
 FOREIGN KEY(DepartmentID) REFERENCES Departments(DepartmentID)
 );
 ```
+
 **Output:**
 <img width="418" alt="image" src="https://github.com/user-attachments/assets/c029fba9-0087-42d4-b6c8-db1d880d666f" />
 
