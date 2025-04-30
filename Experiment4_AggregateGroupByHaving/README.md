@@ -76,10 +76,10 @@ GROUP BY InsuranceCompany;
 <img width="392" alt="image" src="https://github.com/user-attachments/assets/3c678e88-dac1-4537-9a33-6df3986bd13d" />
 
 **Question 2**
-```
+
 ![image](https://github.com/user-attachments/assets/01e4dc7c-9439-4404-8e5a-a360b907a25d)
 
-```
+
 SQL code 
 ```
 SELECT strftime('%Y',ValidityPeriod) AS "ValidityYear",COUNT(PatientID) AS "TotalPatients"
@@ -154,9 +154,9 @@ WHERE city = 'Mumbai';
 <img width="374" alt="image" src="https://github.com/user-attachments/assets/ab0d788c-1474-490a-9564-ee7242f59eef" />
 
 **Question 5**
-```
-![image](https://github.com/user-attachments/assets/eaee3f19-9d5a-43b6-8451-db0c6de8c2d9)
-```
+
+[image](https://github.com/user-attachments/assets/eaee3f19-9d5a-43b6-8451-db0c6de8c2d9)
+
 SQL code 
 ```
 SELECT jdate,MIN(workhour) AS "MIN(workhour)"
@@ -170,10 +170,10 @@ HAVING MIN(workhour) < 10;
 
 
 **Question 6**
-```
+
 ![image](https://github.com/user-attachments/assets/41f3ff03-cb78-4df4-a496-b37eecead1c3)
 
-```
+
 SQL code 
 ```
 SELECT jdate,MIN(workhour) AS "MIN(workhour)"
@@ -190,10 +190,10 @@ Having MIN(income) < 400000;
 ![image](https://github.com/user-attachments/assets/068e97a8-a041-45cf-9159-0667574b2ada)
 
 **Question 7**
-```
+
 ![image](https://github.com/user-attachments/assets/d58a9d0f-75ff-4d23-9a6e-ff9dbbf76897)
 
-```
+
 SQL code
 ```
 SELECT strftime('%Y',ValidityPeriod) AS "ValidityYear",COUNT(PatientID) AS "TotalPatients"
@@ -205,10 +205,10 @@ GROUP BY ValidityPeriod;
 ![image](https://github.com/user-attachments/assets/d57e25e9-e3fb-4b45-a26a-29dfb79113b5)
 
 **Question 8**
-```
+
 ![image](https://github.com/user-attachments/assets/6757af8e-3b94-4f8d-8732-84ca0340bb1a)
 
-```
+
 SQL code 
 ```
 SELECT Medication,Avg(Dosage) AS "AvgDosage"
@@ -256,9 +256,9 @@ FROM customer;
 <img width="312" alt="image" src="https://github.com/user-attachments/assets/4f17f6de-d652-493f-977b-63a7a7725b09" />
 
 **Question 10**
-```
+
 ![image](https://github.com/user-attachments/assets/f552123d-c17f-41d9-b73d-b4d22d7d71b3)
-```
+
 
 SQL code
 ```
@@ -273,6 +273,6 @@ GROUP BY PatientID;
 
 ## RESULT:
 
-![Uploading image.png…]()
+![Screenshot 2025-04-30 212935](https://github.com/user-attachments/assets/84122ac5-1b7a-4841-9305-2102fdbeab3d)
 
 Thus, the SQL queries to implement aggregate functions, GROUP BY, and HAVING clause have been executed successfully.
