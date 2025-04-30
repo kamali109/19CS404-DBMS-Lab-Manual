@@ -155,7 +155,7 @@ WHERE city = 'Mumbai';
 
 **Question 5**
 
-[image](https://github.com/user-attachments/assets/eaee3f19-9d5a-43b6-8451-db0c6de8c2d9)
+![image](https://github.com/user-attachments/assets/eaee3f19-9d5a-43b6-8451-db0c6de8c2d9)
 
 SQL code 
 ```
