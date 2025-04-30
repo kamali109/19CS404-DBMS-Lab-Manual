@@ -206,7 +206,7 @@ WHERE ADDRESS = 'Delhi';
 ![image](https://github.com/user-attachments/assets/83933d16-f21a-4158-92b5-faa5c0ff2f38)
 
 **Question 7**
----
+```
 Write a SQL query to Find employees who have an age less than the average age of employees with incomes over 1 million
 
 Employee Table
@@ -228,8 +228,7 @@ SELECT AVG(age)
 FROM Employee
 WHERE income > 1000000
 );
-``
-
+```
 **Output:**
 
 ![image](https://github.com/user-attachments/assets/46fbdf47-044d-4aeb-95cf-34e65571cc5c)
@@ -277,7 +276,7 @@ WHERE city = 'London'
 ![image](https://github.com/user-attachments/assets/4661ef54-d87c-4d7e-82a7-35c7d501aba7)
 
 **Question 9**
----
+```
 From the following tables write a SQL query to find salespeople who had more than one customer. Return salesman_id and name.
 
 salesman table
@@ -311,13 +310,13 @@ FROM customer
 GROUP BY salesman_id
 HAVING COUNT(salesman_id )> 1
 );
-``
+```
 **Output:**
 
 ![image](https://github.com/user-attachments/assets/be061674-26af-4797-9bca-9f6026ef8396)
 
 **Question 10**
----
+```
 From the following tables, write a SQL query to determine the commission of the salespeople in Paris. Return commission.
 
 salesman table
@@ -348,8 +347,7 @@ SELECT salesman_id
 FROM customer 
 WHERE city = 'Paris'
 );
-``
-
+```
 **Output:**
 
 ![image](https://github.com/user-attachments/assets/2e6a0c38-76ca-4b9f-b546-2775ccfb7f9f)
