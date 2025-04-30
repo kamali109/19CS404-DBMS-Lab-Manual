@@ -78,7 +78,7 @@ SET availability = 2 * availability
 WHERE product_id = 1;
 ```
 **Output:**
-
+![image](https://github.com/user-attachments/assets/84b1c373-42df-4792-aa07-19ccfd561aba)
 
 **Question 3**
 ```
