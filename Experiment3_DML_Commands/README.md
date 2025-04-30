@@ -1,4 +1,4 @@
-# Experiment 3: DML Commands
+![image](https://github.com/user-attachments/assets/6cc56ac4-57ed-4fc3-ae3f-56f0484fb1aa)# Experiment 3: DML Commands
 
 ## AIM
 To study and implement DML (Data Manipulation Language) commands.
@@ -222,6 +222,7 @@ WHERE last_name IS NULL;
 ```
 **Output:**
 
+![image](https://github.com/user-attachments/assets/60473733-044b-40f9-8738-54fb19f234ff)
 
 **Question 9**
 ```
@@ -239,6 +240,7 @@ AND last_name = 'Brown';
 ```
 **Output:**
 
+![image](https://github.com/user-attachments/assets/989f9fd2-a99f-4f9a-a8d0-e34e281b672b)
 
 **Question 10**
 ```
@@ -258,6 +260,7 @@ DELETE FROM Customer
 WHERE CUST_NAME LIKE 'M%'
 AND PAYMENT_AMT < 3000;
 ```
+
 **Output:**
 ![image](https://github.com/user-attachments/assets/a4778cdf-eed0-4cfb-a601-0fec937ae6ed)
 
@@ -266,3 +269,4 @@ AND PAYMENT_AMT < 3000;
 <img width="388" alt="image" src="https://github.com/user-attachments/assets/2b757797-9119-4563-b0cb-b21b7df3ec59" />
 
 Thus, the SQL queries to implement DML commands have been executed successfully.
+
